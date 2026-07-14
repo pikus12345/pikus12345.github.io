@@ -1,0 +1,11 @@
+# Плейсхолдер для скомпилированных файлов Unity WebGL (Build/)
+#
+# После сборки проекта в Unity (File -> Build Settings -> WebGL -> Build)
+# сюда попадут файлы вида:
+#   inquisitor-webgl.loader.js
+#   inquisitor-webgl.data.unityweb
+#   inquisitor-webgl.framework.js.unityweb
+#   inquisitor-webgl.wasm.unityweb
+#
+# Этот файл — временный плейсхолдер, чтобы папка Build/ не потерялась в Git
+# до появления реального билда. Удалите его после первой сборки.

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="mvc-title mvc-desc">
+  <title id="mvc-title">Схема архитектуры MVC</title>
+  <desc id="mvc-desc">Диаграмма взаимодействия Model, View и Controller с использованием VContainer для внедрения зависимостей</desc>
+
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b84ff"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="420" fill="#0a0a0f"/>
+
+  <!-- MODEL -->
+  <rect x="40" y="60" width="200" height="120" rx="16" fill="#14141e" stroke="url(#accentGrad)" stroke-width="2"/>
+  <text x="140" y="105" text-anchor="middle" fill="#ffffff" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700">Model</text>
+  <text x="140" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="13">Данные и</text>
+  <text x="140" y="148" text-anchor="middle" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="13">бизнес-логика</text>
+
+  <!-- VIEW -->
+  <rect x="560" y="60" width="200" height="120" rx="16" fill="#14141e" stroke="url(#accentGrad)" stroke-width="2"/>
+  <text x="660" y="105" text-anchor="middle" fill="#ffffff" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700">View</text>
+  <text x="660" y="130" text-anchor="middle" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="13">Отображение</text>
+  <text x="660" y="148" text-anchor="middle" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="13">(UI, prefabs)</text>
+
+  <!-- CONTROLLER -->
+  <rect x="300" y="240" width="200" height="120" rx="16" fill="#1a1a28" stroke="#6c63ff" stroke-width="3"/>
+  <text x="400" y="285" text-anchor="middle" fill="#ffffff" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700">Controller</text>
+  <text x="400" y="310" text-anchor="middle" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="13">Связывает Model и View</text>
+  <text x="400" y="328" text-anchor="middle" fill="#8b84ff" font-family="JetBrains Mono, monospace" font-size="12">[Inject]</text>
+
+  <!-- VContainer badge -->
+  <rect x="330" y="20" width="140" height="30" rx="15" fill="rgba(108,99,255,0.15)" stroke="#6c63ff" stroke-width="1"/>
+  <text x="400" y="40" text-anchor="middle" fill="#8b84ff" font-family="JetBrains Mono, monospace" font-size="13">VContainer DI</text>
+
+  <!-- Стрелки -->
+  <!-- Controller -> Model -->
+  <path d="M320,260 C220,220 160,200 150,182" fill="none" stroke="#8b84ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="190" y="215" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="11">обновляет</text>
+
+  <!-- Model -> Controller (события) -->
+  <path d="M170,182 C230,225 270,250 300,278" fill="none" stroke="#6a9955" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+  <text x="185" y="240" fill="#6a9955" font-family="Inter, sans-serif" font-size="11">событие</text>
+
+  <!-- Controller -> View -->
+  <path d="M480,260 C580,220 630,200 640,182" fill="none" stroke="#8b84ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="560" y="215" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="11">обновляет</text>
+
+  <!-- View -> Controller (пользовательский ввод) -->
+  <path d="M630,182 C580,225 540,250 500,278" fill="none" stroke="#ffb463" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+  <text x="595" y="240" fill="#ffb463" font-family="Inter, sans-serif" font-size="11">ввод</text>
+
+  <!-- легенда -->
+  <line x1="40" y1="400" x2="70" y2="400" stroke="#8b84ff" stroke-width="2"/>
+  <text x="78" y="404" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="12">управление</text>
+
+  <line x1="190" y1="400" x2="220" y2="400" stroke="#6a9955" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="228" y="404" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="12">события модели</text>
+
+  <line x1="380" y1="400" x2="410" y2="400" stroke="#ffb463" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="418" y="404" fill="#a0a0b0" font-family="Inter, sans-serif" font-size="12">пользовательский ввод</text>
+</svg>

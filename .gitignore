@@ -1,0 +1,38 @@
+# ---------- Системные и временные файлы ----------
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+.vscode/
+.idea/
+
+# ---------- Node / npm (если будут использоваться доп. инструменты) ----------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ---------- Unity (файлы самого Unity-проекта, если он лежит рядом) ----------
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+*.csproj
+*.sln
+*.unityproj
+*.suo
+
+# ---------- WebGL билд ----------
+# Папки с готовым WebGL-билдом ИСКЛЮЧЕНИЯ из игнора — они должны попадать в репозиторий,
+# так как именно они публикуются на GitHub Pages.
+!projects/inquisitor-webgl/
+!projects/inquisitor-webgl/**
+
+# ---------- Резервные копии редакторов ----------
+*~
+*.bak
+*.swp

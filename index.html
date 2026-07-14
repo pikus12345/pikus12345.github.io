@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Иван Петров — Unity Developer | Портфолио</title>
+  <meta name="description" content="Портфолио Junior Unity Developer с инженерным уклоном. Проекты, архитектурные решения, паттерны и код.">
+  <meta name="keywords" content="Unity, Unity Developer, C#, game development, портфолио, разработчик игр">
+  <meta name="author" content="Иван Петров">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Иван Петров — Unity Developer">
+  <meta property="og:description" content="Строю игры так, чтобы их было легко поддерживать и масштабировать.">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
+  <meta property="og:url" content="https://your-account.github.io/my-portfolio-site/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%236c63ff%22>◆</text></svg>">
+
+  <!-- Google Fonts: Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= ХЭДЕР ================= -->
+  <header class="header">
+    <div class="container">
+      <a href="#hero" class="logo">И.П.<span>_dev</span></a>
+
+      <nav aria-label="Основная навигация">
+        <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">Обо мне</a></li>
+          <li><a class="nav-link" href="#projects">Проекты</a></li>
+          <li><a class="nav-link" href="#value">Польза</a></li>
+          <li><a class="nav-link" href="#growth">Развитие</a></li>
+          <li><a class="nav-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO / ОБО МНЕ ================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content" id="about">
+          <span class="hero-greeting">Привет, я</span>
+          <h1 class="hero-title" id="hero-title">Иван Петров — <span class="highlight">Unity Developer</span></h1>
+          <p class="hero-slogan">«Строю игры так, чтобы их было легко поддерживать и масштабировать»</p>
+          <p class="hero-description">
+            Junior Unity-разработчик с инженерным складом ума. Мне интересна не просто механика,
+            а то, как она устроена внутри: архитектура, паттерны, читаемый и тестируемый код.
+            Изучаю DI-контейнеры, асинхронность и ECS, чтобы писать масштабируемые игровые системы.
+            Уже прошёл путь от «спагетти-кода» до осознанного проектирования — и продолжаю расти.
+          </p>
+
+          <div class="tech-stack" aria-label="Стек технологий">
+            <span class="tech-tag"><span class="icon">🎮</span> Unity</span>
+            <span class="tech-tag"><span class="icon">🔧</span> C#</span>
+            <span class="tech-tag"><span class="icon">🧩</span> VContainer</span>
+            <span class="tech-tag"><span class="icon">🎬</span> DOTween</span>
+            <span class="tech-tag"><span class="icon">🌐</span> Git</span>
+            <span class="tech-tag"><span class="icon">📦</span> WebGL</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Смотреть проекты</a>
+            <a class="btn btn-secondary" href="https://github.com/your-account" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="https://freelance.ru/pikus12345" target="_blank" rel="noopener noreferrer">Freelance.ru</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПРОЕКТЫ (ОБЗОР) ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Портфолио</span>
+          <h2 class="section-title" id="projects-title">Проекты</h2>
+          <p class="section-subtitle">
+            От pet-проектов и геймджемов до коммерческой разработки в команде.
+            Каждый проект — это конкретные архитектурные решения и опыт.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Карточки рендерятся динамически из js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПРОЕКТ 1: PSX-HORROR ================= -->
+    <section class="project-detail section-alt" id="project-psx-horror" aria-labelledby="psx-title">
+      <div class="container">
+        <div class="project-detail-header fade-in">
+          <div>
+            <span class="section-label">Проект 01 · Pet-проект</span>
+            <h2 class="section-title" id="psx-title">PSX-Horror</h2>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/your-account/psx-horror" target="_blank" rel="noopener noreferrer">
+            Смотреть на GitHub
+          </a>
+        </div>
+        <p class="section-subtitle fade-in">
+          Технический стенд-шаблон для 3D-хоррора в эстетике PSX. Цель проекта — обкатать
+          архитектурные решения, которые легко переносятся в реальные игры: MVC, DI, пулы объектов.
+        </p>
+
+        <div class="project-detail-grid two-col">
+          <!-- Схема MVC -->
+          <div class="project-detail-block fade-in">
+            <h4>Архитектура: MVC</h4>
+            <div class="diagram-wrap">
+              <img src="assets/diagrams/mvc-diagram.svg" alt="Схема архитектуры MVC: Model, View, Controller и VContainer DI" loading="lazy" width="800" height="420">
+            </div>
+          </div>
+
+          <!-- Дерево папок -->
+          <div class="project-detail-block fade-in">
+            <h4>Структура проекта</h4>
+            <pre class="folder-tree"><span class="folder">Assets/</span>
+├── <span class="folder">Scripts/</span>
+│   ├── <span class="folder">Models/</span>
+│   │   └── <span class="file">PlayerHealthModel.cs</span>
+│   ├── <span class="folder">Views/</span>
+│   │   └── <span class="file">PlayerHealthView.cs</span>
+│   ├── <span class="folder">Controllers/</span>
+│   │   └── <span class="file">PlayerHealthController.cs</span>
+│   ├── <span class="folder">DI/</span>
+│   │   └── <span class="file">GameLifetimeScope.cs</span>
+│   └── <span class="folder">Utils/</span>
+│       └── <span class="file">ObjectPool.cs</span>
+├── <span class="folder">Prefabs/</span>
+└── <span class="folder">Scenes/</span></pre>
+          </div>
+        </div>
+
+        <div class="project-detail-grid two-col">
+          <!-- Пример кода -->
+          <div class="project-detail-block fade-in">
+            <h4>Пример: DI через VContainer</h4>
+            <pre class="code-block"><span class="comment">// Контроллер получает зависимости через конструктор,</span>
+<span class="comment">// а не через синглтоны — это упрощает тестирование</span>
+<span class="keyword">public class</span> <span class="type">PlayerHealthController</span>
+{
+    <span class="keyword">private readonly</span> <span class="type">IPlayerHealthModel</span> _model;
+    <span class="keyword">private readonly</span> <span class="type">PlayerHealthView</span> _view;
+
+    [<span class="attr">Inject</span>]
+    <span class="keyword">public</span> <span class="type">PlayerHealthController</span>(
+        <span class="type">IPlayerHealthModel</span> model,
+        <span class="type">PlayerHealthView</span> view)
+    {
+        _model = model;
+        _view = view;
+        _model.OnHealthChanged += HandleHealthChanged;
+    }
+
+    <span class="keyword">private void</span> HandleHealthChanged(<span class="type">float</span> value)
+        => _view.UpdateHealthBar(value);
+}</pre>
+          </div>
+
+          <!-- Список фич -->
+          <div class="project-detail-block fade-in">
+            <h4>Реализованные паттерны и решения</h4>
+            <ul class="feature-list">
+              <li>Разделение ответственности через MVC</li>
+              <li>Внедрение зависимостей (DI) с помощью VContainer</li>
+              <li>Object Pool для переиспользования врагов и эффектов</li>
+              <li>Анимации через DOTween вместо ручных корутин там, где это уместно</li>
+              <li>Событийная модель вместо прямых ссылок между компонентами</li>
+              <li>Асинхронная загрузка сцен и ресурсов через корутины</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПРОЕКТ 2: ИНКВИЗИТОР ================= -->
+    <section class="project-detail" id="project-inquisitor" aria-labelledby="inquisitor-title">
+      <div class="container">
+        <div class="project-detail-header fade-in">
+          <div>
+            <span class="section-label">Проект 02 · GameJam</span>
+            <h2 class="section-title" id="inquisitor-title">Инквизитор</h2>
+          </div>
+        </div>
+        <p class="section-subtitle fade-in">
+          Игра, созданная за 48 часов на геймджеме. Главный вызов — успеть реализовать
+          рабочий ИИ и систему сохранений в жёстко ограниченное время.
+        </p>
+
+        <div class="tag-list fade-in" style="margin-bottom: 2rem;">
+          <span class="tag">GameJam</span>
+          <span class="tag">State Machine</span>
+          <span class="tag">JSON Save</span>
+          <span class="tag">Unity</span>
+        </div>
+
+        <!-- WebGL билд -->
+        <div class="project-detail-block fade-in" style="margin-bottom: 2rem;">
+          <h4>Играть прямо в браузере</h4>
+          <div class="media-frame">
+            <!-- WebGL билд будет доступен по адресу:
+                 https://your-account.github.io/projects/inquisitor-webgl/ -->
+            <iframe
+              src="projects/inquisitor-webgl/index.html"
+              title="WebGL-билд игры «Инквизитор»"
+              loading="lazy"
+              allow="autoplay; fullscreen"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="project-detail-grid two-col">
+          <div class="project-detail-block fade-in">
+            <h4>Описание и механики</h4>
+            <p style="color: var(--color-text-secondary);">
+              Игрок расследует дело в мрачном сеттинге инквизиции. ИИ противников построен на
+              простой, но надёжной конечной стейт-машине (State Machine): Idle → Patrol → Chase → Attack.
+              Прогресс и настройки сохраняются локально через сериализацию в JSON.
+              Главная сложность геймджема — уложить архитектуру ИИ и систему сохранений
+              в 48 часов без потери качества кода.
+            </p>
+          </div>
+          <div class="project-detail-block fade-in">
+            <h4>Ссылки</h4>
+            <div class="hero-actions">
+              <a class="btn btn-secondary" href="https://freelance.ru/pikus12345" target="_blank" rel="noopener noreferrer">Freelance.ru</a>
+              <a class="btn btn-secondary" href="https://freelance.ru/portfolio/project/view/1649844" target="_blank" rel="noopener noreferrer">Страница проекта</a>
+              <a class="btn btn-secondary" href="https://your-account.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a>
+              <a class="btn btn-secondary" href="https://github.com/your-account/inquisitor" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПРОЕКТ 3: СЕРДЦЕ УРАЛА ================= -->
+    <section class="project-detail section-alt" id="project-ural-heart" aria-labelledby="ural-title">
+      <div class="container">
+        <div class="project-detail-header fade-in">
+          <div>
+            <span class="section-label">Проект 03 · Коммерческий</span>
+            <h2 class="section-title" id="ural-title">Сердце Урала</h2>
+          </div>
+          <a class="btn btn-primary" href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">
+            Страница в Steam
+          </a>
+        </div>
+        <p class="section-subtitle fade-in">
+          Ритм-RPG, разрабатываемая в составе команды. Коммерческий проект с полноценным
+          процессом разработки: код-ревью, ветки, релизные циклы.
+        </p>
+
+        <div class="project-detail-grid two-col">
+          <div class="project-detail-block fade-in">
+            <h4>Видео проекта</h4>
+            <div class="media-frame">
+              <!-- Плейсхолдер YouTube-плеера. Замените VIDEO_ID на реальный ID видео -->
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Трейлер игры «Сердце Урала»"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <div class="project-detail-block fade-in">
+            <h4>Моя роль в команде</h4>
+            <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">
+              Отвечал за реализацию игровых механик ритм-системы и интеграцию UI прогрессии
+              персонажа. Работал в связке с гейм-дизайнером и художником, синхронизируя
+              логику с визуальным рядом.
+            </p>
+            <ul class="feature-list">
+              <li>Разработка веток в Git, оформление pull request'ов</li>
+              <li>Прохождение код-ревью и работа с фидбеком тимлида</li>
+              <li>Интеграция ассетов художников в рабочие сцены</li>
+              <li>Отладка и профилирование производительности на мобильных устройствах</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ПРОЕКТ 4: ТАНЧИКИ ================= -->
+    <section class="project-detail" id="project-tanchiki" aria-labelledby="tanchiki-title">
+      <div class="container">
+        <div class="project-detail-header fade-in">
+          <div>
+            <span class="section-label">Проект 04 · История роста</span>
+            <h2 class="section-title" id="tanchiki-title">Танчики</h2>
+          </div>
+          <a class="btn btn-secondary" href="https://github.com/your-account/tanchiki-legacy" target="_blank" rel="noopener noreferrer">
+            Старый репозиторий
+          </a>
+        </div>
+        <p class="section-subtitle fade-in">
+          Мой первый проект в Unity. Показываю его открыто — как честный пример того,
+          с чего я начинал, и как изменился мой подход к коду.
+        </p>
+
+        <div class="code-compare fade-in">
+          <div class="project-detail-block bad">
+            <h4>Было (спагетти-код)</h4>
+            <pre class="code-block"><span class="comment">// Всё в одном MonoBehaviour, жёсткие связи,</span>
+<span class="comment">// приведения типов через GetComponent на каждый чих</span>
+<span class="keyword">public class</span> <span class="type">Tank</span> : <span class="type">MonoBehaviour</span>
+{
+    <span class="keyword">public</span> <span class="type">int</span> health = <span class="string">100</span>;
+    <span class="keyword">public</span> <span class="type">GameObject</span> bulletPrefab;
+
+    <span class="keyword">void</span> Update()
+    {
+        <span class="keyword">if</span> (Input.GetKeyDown(KeyCode.Space))
+        {
+            <span class="keyword">var</span> b = Instantiate(bulletPrefab);
+            b.GetComponent&lt;<span class="type">Rigidbody</span>&gt;().velocity =
+                transform.forward * <span class="string">10</span>;
+        }
+        <span class="keyword">if</span> (health &lt;= <span class="string">0</span>)
+            GameObject.Find(<span class="string">"UI"</span>)
+                .GetComponent&lt;<span class="type">UIManager</span>&gt;()
+                .ShowGameOver(); <span class="comment">// прямая жёсткая связь</span>
+    }
+}</pre>
+          </div>
+
+          <div class="project-detail-block good">
+            <h4>Стало (чистый код)</h4>
+            <pre class="code-block"><span class="comment">// Модель танка не знает про UI и ввод,</span>
+<span class="comment">// оповещает подписчиков через событие</span>
+<span class="keyword">public class</span> <span class="type">TankModel</span>
+{
+    <span class="keyword">public event</span> <span class="type">Action</span> OnDestroyed;
+    <span class="keyword">private</span> <span class="type">int</span> _health = <span class="string">100</span>;
+
+    <span class="keyword">public void</span> TakeDamage(<span class="type">int</span> amount)
+    {
+        _health -= amount;
+        <span class="keyword">if</span> (_health &lt;= <span class="string">0</span>)
+            OnDestroyed?.Invoke();
+    }
+}
+
+<span class="comment">// Контроллер подписывается на событие и решает,</span>
+<span class="comment">// что с ним делать — например, сообщить UI</span>
+[<span class="attr">Inject</span>]
+<span class="keyword">public</span> <span class="type">TankController</span>(<span class="type">TankModel</span> model, <span class="type">IUiService</span> ui)
+{
+    model.OnDestroyed += ui.ShowGameOver;
+}</pre>
+          </div>
+        </div>
+
+        <div class="project-detail-block fade-in" style="margin-top: 2rem;">
+          <h4>Почему архитектура важна</h4>
+          <p style="color: var(--color-text-secondary);">
+            В «Танчиках» любое изменение ломало соседние системы — код было страшно трогать.
+            Переход на разделение ответственности, события вместо прямых вызовов и DI избавил
+            от хрупких связей: теперь новую фичу можно добавить, не боясь сломать остальное.
+            Это разница между «код работает» и «код, с которым можно работать».
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ЧЕМ Я МОГУ БЫТЬ ПОЛЕЗЕН ================= -->
+    <section class="section section-alt" id="value" aria-labelledby="value-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Сотрудничество</span>
+          <h2 class="section-title" id="value-title">Чем я могу быть полезен</h2>
+        </div>
+
+        <div class="value-grid">
+          <div class="card value-card fade-in">
+            <div class="value-icon">🕹️</div>
+            <h3>Для инди-студии</h3>
+            <p style="color: var(--color-text-secondary);">
+              Готов брать на себя реализацию игровых механик и систем от прототипа до релиза.
+            </p>
+            <ul>
+              <li>Быстрое прототипирование игровых механик</li>
+              <li>Читаемая архитектура, которую легко расширять</li>
+              <li>Самостоятельная отладка и оптимизация производительности</li>
+              <li>Открытость к код-ревью и парному программированию</li>
+            </ul>
+          </div>
+
+          <div class="card value-card fade-in">
+            <div class="value-icon">💼</div>
+            <h3>Для заказчика</h3>
+            <p style="color: var(--color-text-secondary);">
+              Помогу довести коммерческий проект от идеи до рабочего билда без лишних рисков.
+            </p>
+            <ul>
+              <li>Прозрачная коммуникация и оценка сроков</li>
+              <li>Код, который переживёт смену исполнителя</li>
+              <li>Опыт работы в команде с код-ревью и Git-flow</li>
+              <li>Готовность разбираться в существующей кодовой базе</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ОБУЧЕНИЕ И РАЗВИТИЕ ================= -->
+    <section class="section" id="growth" aria-labelledby="growth-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Рост</span>
+          <h2 class="section-title" id="growth-title">Обучение и развитие</h2>
+          <p class="section-subtitle">Честная оценка текущего уровня и план развития на ближайшее время.</p>
+        </div>
+
+        <div class="growth-grid">
+          <div class="card growth-card fade-in">
+            <h4>Текущий уровень</h4>
+
+            <div class="skill-bar">
+              <div class="skill-bar-label"><span>C# / Unity</span><span>70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="70"></div></div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar-label"><span>Архитектура (MVC/DI)</span><span>60%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="60"></div></div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar-label"><span>Git / командная работа</span><span>55%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="55"></div></div>
+            </div>
+          </div>
+
+          <div class="card growth-card fade-in">
+            <h4>Изучаю сейчас</h4>
+            <ul>
+              <li>UniTask — асинхронность без сборки мусора</li>
+              <li>Addressables — управление ресурсами и загрузкой</li>
+              <li>Unity ECS / DOTS — производительность на больших масштабах</li>
+            </ul>
+          </div>
+
+          <div class="card growth-card fade-in">
+            <h4>Планы на развитие</h4>
+            <ul>
+              <li>Участие в 2-3 коммерческих проектах как middle-разработчик</li>
+              <li>Глубокое изучение сетевого кода (Netcode / Mirror)</li>
+              <li>Постройка pet-проекта на чистом ECS-подходе</li>
+              <li>Регулярные код-ревью с более опытными разработчиками</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= КОНТАКТЫ / ФУТЕР ================= -->
+  <footer class="footer" id="contacts" aria-labelledby="footer-title">
+    <div class="footer-content">
+      <h2 class="footer-title" id="footer-title">Давайте обсудим проект</h2>
+      <a class="footer-email" href="mailto:your_email@gmail.com">your_email@gmail.com</a>
+
+      <ul class="social-list">
+        <li><a class="social-link" href="https://github.com/your-account" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🔗</span> GitHub</a></li>
+        <li><a class="social-link" href="https://t.me/your_telegram" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">✈️</span> Telegram</a></li>
+        <li><a class="social-link" href="https://freelance.ru/pikus12345" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🌐</span> Freelance.ru</a></li>
+        <li><a class="social-link" href="mailto:your_email@gmail.com"><span aria-hidden="true">✉️</span> Email</a></li>
+      </ul>
+
+      <p class="footer-copy">© <span id="current-year">2026</span> Иван Петров. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Наверх">↑</button>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
