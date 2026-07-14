@@ -4,7 +4,7 @@
 Статический сайт на чистом HTML/CSS/JavaScript (без сборщиков и фреймворков),
 готовый к размещению на GitHub Pages.
 
-🔗 **Живой сайт:** https://your-account.github.io/my-portfolio-site/
+🔗 **Живой сайт:** https://pikus12345.github.io/
 
 ## Стек
 
