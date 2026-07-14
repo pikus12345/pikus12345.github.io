@@ -11,10 +11,10 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Вадим — Unity Junior Developer">
+  <meta property="og:title" content="Вадим - Unity Junior Developer">
   <meta property="og:description" content="Строю игры так, чтобы их было легко поддерживать и масштабировать.">
   <meta property="og:image" content="assets/images/hero-bg.jpg">
-  <meta property="og:url" content="https://your-account.github.io/my-portfolio-site/">
+  <meta property="og:url" content="https://pikus12345.github.io/my-portfolio-site/">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%236c63ff%22>◆</text></svg>">
@@ -56,11 +56,11 @@
         <div class="hero-content" id="about">
           <span class="hero-greeting">Привет, я</span>
           <h1 class="hero-title" id="hero-title">Вадим - <span class="highlight">Unity Junior Developer</span></h1>
-          <p class="hero-slogan">«Строю игры так, чтобы их было легко поддерживать и масштабировать»</p>
+          <p class="hero-slogan">Строю игры так, чтобы их было легко поддерживать и масштабировать</p>
           <p class="hero-description">
             Junior Unity-разработчик с инженерным складом ума. Мне интересна не просто механика,
             а то, как она устроена внутри: архитектура, паттерны, читаемый и тестируемый код.
-            Изучаю DI-контейнеры, асинхронность и ECS, чтобы писать масштабируемые игровые системы.
+            Изучаю DI-контейнеры, MVC/MVP, чтобы писать масштабируемые игровые системы.
             Уже прошёл путь от «спагетти-кода» до осознанного проектирования - и продолжаю расти.
           </p>
 
@@ -90,7 +90,7 @@
           <h2 class="section-title" id="projects-title">Проекты</h2>
           <p class="section-subtitle">
             От pet-проектов и геймджемов до коммерческой разработки в команде.
-            Каждый проект — это конкретные архитектурные решения и опыт.
+            Каждый проект - это конкретные архитектурные решения и опыт.
           </p>
         </div>
 
@@ -114,7 +114,7 @@
         </div>
         <p class="section-subtitle fade-in">
           Технический стенд для 3D-хоррора в эстетике PSX. Цель проекта — обкатать
-          архитектурные решения, которые легко переносятся в реальные игры: MVC, VContainer(DI), DOTween
+          архитектурные решения, которые легко переносятся в реальные игры: MVC, VContainer(DI), DOTween.
         </p>
 
         <div class="project-detail-grid two-col">
@@ -131,16 +131,19 @@
             <h4>Структура проекта</h4>
             <pre class="folder-tree"><span class="folder">Assets/</span>
 ├── <span class="folder">Scripts/</span>
-│   ├── <span class="folder">Models/</span>
-│   │   └── <span class="file">PlayerHealthModel.cs</span>
-│   ├── <span class="folder">Views/</span>
-│   │   └── <span class="file">PlayerHealthView.cs</span>
-│   ├── <span class="folder">Controllers/</span>
-│   │   └── <span class="file">PlayerHealthController.cs</span>
+│   ├── <span class="folder">Core/</span>
 │   ├── <span class="folder">DI/</span>
-│   │   └── <span class="file">GameLifetimeScope.cs</span>
-│   └── <span class="folder">Utils/</span>
-│       └── <span class="file">ObjectPool.cs</span>
+│   ├── <span class="folder">Interaction/</span>
+│       ├── <span class="folder">Interactables/</span>
+│           ├── <span class="folder">DoorView.cs</span>
+│           ├── <span class="folder">DoorController.cs</span>
+│           └── <span class="folder">Takeable.cs</span>
+│       ├── <span class="file">IInteractable.cs</span>
+│       ├── <span class="file">IInteractor.cs</span>
+│       ├── <span class="file">InteractorView.cs</span>
+│       └── <span class="file">PlayerInteractor.cs</span>
+│   ├── <span class="folder">Player/</span>
+│   └── <span class="folder">UI/</span>
 ├── <span class="folder">Prefabs/</span>
 └── <span class="folder">Scenes/</span></pre>
           </div>
@@ -178,10 +181,8 @@
             <ul class="feature-list">
               <li>Разделение ответственности через MVC</li>
               <li>Внедрение зависимостей (DI) с помощью VContainer</li>
-              <li>Object Pool для переиспользования врагов и эффектов</li>
               <li>Анимации через DOTween вместо ручных корутин там, где это уместно</li>
               <li>Событийная модель вместо прямых ссылок между компонентами</li>
-              <li>Асинхронная загрузка сцен и ресурсов через корутины</li>
             </ul>
           </div>
         </div>
@@ -205,7 +206,6 @@
         <div class="tag-list fade-in" style="margin-bottom: 2rem;">
           <span class="tag">GameJam</span>
           <span class="tag">State Machine</span>
-          <span class="tag">JSON Save</span>
           <span class="tag">Unity</span>
         </div>
 
