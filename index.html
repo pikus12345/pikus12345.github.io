@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="css/custom.css"> 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="light">
+        <!--Навбар-->
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="light">
             <div class="container">
                 <a class="navbar-brand" href="#">pikus12345</a>
                 
@@ -34,9 +35,148 @@
             </div>
         </nav>
         
-
-        <h1 class="text-center">pikus12345 - Unity Разработчик</h1>
-        <button type="button" class="btn btn-primary">button</button>
+        <main class="container my-5">
+            <!--Hero-->
+            <section class="row align-items-center g-4">
+                <div class="col-md-4 text-center">
+                    <img 
+                        src="images/me.jpg" 
+                        alt="Фото: Вадим Абдулин"
+                        class="img-fluid rounded border border-3 border-dark"
+                    >
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">Вадим Абдулин</h1>
+                    <p class="lead">Unity Dev + Студент + Software Engineering</p>
+                    <p>Junior Unity разработчик. Делаю игры на стеке Unity/VContainer/MVC/YG2, а также учусь в СПбГУ на 2 курсе Программной инженерии. </p>
+                </div>
+            </section>
+            <!--Projects-->
+            <section class="my-5" id="projects">
+                <h1 class="display-6 fw-bold mb-4">Проекты</h1>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-secondary mb-3">
+                            <h4 class="card-header bg-primary fw-bold">Сердце Урала</h4>
+                            <div class="card-body">
+                                <p class="card-text">Демоверсия сюжетной пиксельной ритм-RPG. Моя работа - архитектура систем сцен, состояний игры, менеджеров.</p>
+                                <div class="d-flex align-items-center flex-wrap gap-2 justify-content-end">
+                                    <a href="https://store.steampowered.com/app/4515240/Heart_of_Ural/"
+                                        class="badge btn d-inline-flex align-items-center"
+                                        target="_blank" rel="noopener"
+                                        aria-label="Страница игры в Steam">
+                                            <img src="images/steam_logo.webp" alt="Steam Logo" width="16" height="16">
+                                    </a>
+                                    <a href="https://heartofural.com/"
+                                        class="badge btn d-inline-flex align-items-center"
+                                        target="_blank" rel="noopener"
+                                        aria-label="Страница игры в Steam">
+                                            <img src="images/web.png" alt="Steam Logo" width="16" height="16">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-secondary mb-3">
+                            <h4 class="card-header bg-primary fw-bold">Inquisitor</h4>
+                            <div class="card-body">
+                                <p class="card-text">Dark-fantasy 3D-FPS бегалка созданная на SibGameJam November 2025. Мой вклад: руководство командой из пяти человек, реализация архитектуры, некоторые механики</p>
+                                <div class="d-flex align-items-center flex-wrap gap-2 justify-content-end">
+                                    <a href="https://store.steampowered.com/app/4515240/Heart_of_Ural/"
+                                        class="badge btn d-inline-flex align-items-center"
+                                        target="_blank" rel="noopener"
+                                        aria-label="Страница кейса на freelance.ru">
+                                            Freelance.ru
+                                    </a>
+                                    <a href="https://syntezz.itch.io/inkvisitor"
+                                        class="badge btn d-inline-flex align-items-center"
+                                        target="_blank" rel="noopener"
+                                        aria-label="Страница игры в itch.io">
+                                            <img src="images/itch-io-logo.webp" alt="Steam Logo" width="16" height="16">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card bg-secondary mb-3">
+                            <h4 class="card-header bg-primary fw-bold">Blind Heart</h4>
+                            <div class="card-body">
+                                <p class="card-text">Сюжетная пиксельная ритм-RPG. Моя работа - архитектура систем сцен, состояний игры, менеджеров.</p>
+                                <div class="d-flex align-items-center flex-wrap gap-2 justify-content-end">
+                                    <a href="https://syntezz.itch.io/blind-heart"
+                                        class="badge btn d-inline-flex align-items-center"
+                                        target="_blank" rel="noopener"
+                                        aria-label="Страница игры в itch.io">
+                                            <img src="images/itch-io-logo.webp" alt="Steam Logo" width="16" height="16">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="hobbies" class="my-5">
+                <h1 class="display-6 fw-bold mb-4">Увлечения</h1>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex align-items-start gap-3 mb-3">
+                                <span class="fs-4">🎵</span>
+                                <div>
+                                    <strong>Музыка</strong>
+                                    <p class="mb-0">Пою: классический и экстрим-вокал; и играю на гитаре. А ещё я могу в монгольское горловое пение.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <span class="fs-4">☕</span>
+                                <div>
+                                    <strong>Кофе</strong>
+                                    <p class="mb-0">Люблю кофе (особенно фильтр-кофе) и хочу от него спать. Пью 2-3 чашки в день.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex align-items-start gap-3 mb-3">
+                                <span class="fs-4">🧠</span>
+                                <div>
+                                    <strong>Психология</strong>
+                                    <p class="mb-0">С умным видом читал книги по психологии, начиная от "Языка телодвижений" Пиза, заканчивая "Введение в психоанализ" Фрейда.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <span class="fs-4">📚</span>
+                                <div>
+                                    <strong>[ПУСТО]</strong>
+                                    <p class="mb-0">[ПУСТО]</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="contacts" class="my-5 text-center">
+                <h2 class="display-6 fw-bold mb-4 text-center">Контакты</h2>
+                <div>Остались вопросы или пожелания? Или просто хочешь передать привет?</div>
+                <div class="btn-group m-3">
+                    <a href="https://t.me/pikus12345" class="btn btn-info" target="_blank"><img src="images/telegram-logo.png" width="16px">Телеграм</a>
+                    <a href="mailto:vadim15122006@gmail.com" class="btn btn-secondary" target="_blank"><img src="images/email-logo.webp" width="16px">Почта</a>
+                    <a href="https://github.com/pikus12345" class="btn btn-dark" target="_blank"><img src="images/github-logo.png" width="16px">GitHub</a>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-primary py-3">
+            <div class="container text-center">
+                <p class="mb-0">© 2026 MIT License.</p>
+            </div>
+        </footer>
+        
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
     </body>
 </html>
